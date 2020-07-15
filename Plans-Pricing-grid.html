@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,800;1,700&display=swap" rel="stylesheet">
+    <title>Plans & Pricing</title>
+
+    <style>
+         /* RESET */
+        .plans-pricing a{
+            text-decoration: none;
+        }
+
+        .plans-pricing ul{
+            list-style: none;
+            padding: 0;
+            margin: 0px;
+        }
+
+        body{
+            background-color: #fff;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin-top: 5em;
+        }
+
+        .container{
+            width: 1200px;
+            margin: auto;
+
+            display: grid;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        .plans-pricing{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 0.5vw;
+
+            padding: 1em;
+        }
+
+        .plans-pricing .basic, .bussines, .premium, .ultimate{
+            border: 1px solid #ddd;
+            padding: 2em;
+            margin: 0 1em;
+        } 
+
+        .plans-pricing h5{
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .plans-pricing h3{
+            font-size: 2em;
+            margin-top: -0.5em;
+        }
+
+        .plans-pricing h3 span{
+            font-size: 0.5em;
+        }
+
+        .plans-pricing  p{
+            font-size: 0.8em;
+            margin-top: -1.5em;
+            padding-bottom: 3em;
+            margin-bottom: 2em;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .plans-pricing li::before{
+            content: "\2713";
+            font-weight: 800;
+            font-size: 1.2em;
+            margin-right: 10px;
+            color: rgb(13, 190, 13);
+        }
+
+        .plans-pricing li{
+            padding: 0.5em;
+        }
+
+        .plans-pricing .basic li:last-child::before{
+            content: "\2A2F";
+            font-weight: 800;
+            font-size: 1.2em;
+            margin-right: 10px;
+            color: red;
+        }
+
+        .plans-pricing a{
+            display: inline-block;
+            background-color: #005bea;
+            border-radius: 25px ;
+            padding: 15px 25px;
+            color: white;
+            font-size: 0.8em;
+            font-weight: 200;
+            margin-top: 3em;
+        }
+
+        @media (max-width:1240px){
+            .container{
+                display: block;
+                margin: auto;
+                width: 90%;
+            }
+            .plans-pricing{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2em;
+                margin: auto;
+                width: 90%;
+            }
+        }
+
+        @media (max-width:900px){
+            .container{
+                display: block;
+                margin: auto;
+                width: 90%;
+            }
+            .plans-pricing{
+
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2em;
+                margin: auto;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>Plans & Pricing</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </header>
+    
+        <section class="plans-pricing">
+            <div class="basic">
+                <div>
+                    <h5>BASIC</h5>
+                    <h3> $99 <span>/ MONTH</span> </h3>
+                    <p> Appico Pricing Table Design.</p>
+                </div>
+    
+                <div>
+                    <ul>
+                        <li>1 User</li>
+                        <li>1 Dashboard</li>
+                        <li>5 Projects</li>
+                        <li>Custom Domain</li>
+                    </ul>
+                </div>
+                        
+                <div>
+                    <a href="">PURCHASE</a>
+                </div>
+            </div>
+    
+            <div class="bussines">
+                <div>
+                    <h5>BUSINESS</h5>
+                    <h3> $49 <span>/ MONTH</span> </h3>
+                    <p> Appico Pricing Table Design.</p>
+                </div>
+    
+                <div>
+                    <ul>
+                        <li>1 User</li>
+                        <li>1 Dashboard</li>
+                        <li>5 Projects</li>
+                        <li>Custom Domain</li>
+                    </ul>
+                </div>
+                        
+                <div>
+                    <a href="">PURCHASE</a>
+                </div>
+            </div>
+    
+            <div class="premium">
+                <div>
+                    <h5>PREMIUM</h5>
+                    <h3> $149 <span>/ MONTH</span> </h3>
+                    <p> Appico Pricing Table Design. </p>
+                </div>
+    
+                <div>
+                    <ul>
+                        <li>1 User</li>
+                        <li>1 Dashboard</li>
+                        <li>5 Projects</li>
+                        <li>Custom Domain</li>
+                    </ul>
+                </div>
+                        
+                <div>
+                    <a href="">PURCHASE</a>
+                </div>
+            </div>
+    
+            <div class="ultimate">
+                <div>
+                    <h5>ULTIMATE</h5>
+                    <h3> $199 <span>/ MONTH</span> </h3>
+                    <p> Appico Pricing Table Design. </p>
+                </div>
+    
+                <div>
+                    <ul>
+                        <li>1 User</li>
+                        <li>1 Dashboard</li>
+                        <li>5 Projects</li>
+                        <li>Custom Domain</li>
+                    </ul>
+                </div>
+                        
+                <div>
+                    <a href="">PURCHASE</a>
+                </div>
+            </div>
+    
+        </section>
+
+    </section>
+
+    
+    
+</body>
+</html>
